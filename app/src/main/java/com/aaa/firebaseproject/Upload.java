@@ -1,42 +1,35 @@
 package com.aaa.firebaseproject;
 
 public class Upload {
-    private String mTitle;
-    private String mImageUrl;
-    private String mDescription;
+
+    private String title;
+    private String image;
+    private String desc;
+
+    public Upload(String title, String image, String desc) {
+        this.title = title;
+        this.image = image;
+        this.desc = desc;
+    }
 
     public Upload() {
         //empty constructor needed
     }
 
-    public Upload(String title, String imageUrl, String description) {
-
-        if (title.trim().equals("")) {
-            title = "No Title";
-        }
-
-        mTitle = title;
-        mImageUrl = imageUrl;
-        mDescription = description;
-    }
-    public String getmTitle(){
-        return mTitle;
-    }
-    public void setmTitle(String title) {
-        mTitle = title;
+    public String getTitle(){ return title; }
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getmImageUrl(){
-        return mImageUrl;
-    }
-    public void setmImageUrl(String imageUrl) {
-        mImageUrl = imageUrl;
+    public String getImage(){ return image; }
+    public void setimage(String image) {
+        this.image = image;
     }
 
-    public String getmDescription(){
-        return mDescription;
+    public String getDesc(){
+        return desc;
     }
-    public void setmDescription(String description) {
-        mDescription = description;
+    public void setdesc(String desc) {
+        this.desc = desc;
     }
 }
